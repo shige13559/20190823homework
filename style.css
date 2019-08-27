@@ -1,0 +1,56 @@
+p{
+    font-size: 25px;
+}
+
+h1{
+    margin:2em 0;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+h1:before, h1:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+}
+h1:before {left: 10px;}
+h1:after {right: 10px;}
+h1 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.hh{
+    font-size:15px;
+}
+
+#page_top{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+  }
+  #page_top a{
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f0aa';
+    font-size: 60px;
+    color: #ef3f40;
+  }
+  
+  .footer{
+      background-color: rgb(2, 26, 26);
+      height: 100px;
+  }
